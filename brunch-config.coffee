@@ -1,9 +1,12 @@
 exports.config =
-  # See http://brunch.io/#documentation for docs.
+   # See https://github.com/brunch/brunch/blob/master/docs/config.md.
+  modules: 
+    wrapper: false
+    definition: false
   files:
     javascripts:
-      joinTo: 'app.js'
+      joinTo: 'js/app.js'
     stylesheets:
-      joinTo: 'app.css'
+      joinTo: 'css/app.css'
     templates:
-      joinTo: 'app.js'
+      joinTo: 'js/app.js'

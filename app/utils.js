@@ -1,3 +1,3 @@
-function sayHello (name) {
-	console.log("Hello" +  name + "!!!!")
-}
+exports.sayHello = function(name) {
+	console.log("Hello " +  name + "!!!!")
+};

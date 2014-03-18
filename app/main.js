@@ -1,3 +1,8 @@
-console.log("Hello Brunch")
+exports.init = function() {
 
-console.log(_.shuffle([1, 2, 3, 4, 5, 6]))
+	console.log("Hello Brunch")
+	console.log(_.shuffle([1, 2, 3, 4, 5, 6]))
+
+	var utils = require('utils')
+	utils.sayHello('Brunch')
+};

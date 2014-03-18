@@ -5,7 +5,9 @@ exports.config =
     definition: 'amd'
   files:
     javascripts:
-      joinTo: 'js/app.js'
+      joinTo:
+      	'js/app.js': /^app/
+      	'js/vendor.js': /^(bower_components|vendor)[\\/]/
     stylesheets:
       joinTo: 'css/app.css'
     templates:

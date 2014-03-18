@@ -11,8 +11,9 @@
 	<p>sample page from brunch!!!</p>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript">
-		var main = require('main')
-		main.init() 
+		require(['main'], function( mainModule ){
+     		mainModule.init()
+		});
 	</script>
 </body>
 </html>

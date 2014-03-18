@@ -1,3 +1,11 @@
-exports.sayHello = function(name) {
-	console.log("Hello " +  name + "!!!!")
-};
+define( 
+    [], 
+    function ( ) {
+    	var utilsModule = {
+    		sayHello:function (name) {
+    			console.log("Hello " +  name + "!!!!")
+    		}
+    	}
+        return utilsModule
+    }
+);

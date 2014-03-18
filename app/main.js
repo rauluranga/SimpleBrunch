@@ -1,8 +1,13 @@
-exports.init = function() {
-
-	console.log("Hello Brunch")
-	console.log(_.shuffle([1, 2, 3, 4, 5, 6]))
-
-	var utils = require('utils')
-	utils.sayHello('Brunch')
-};
+define( 
+    ['utils'], 
+    function ( Utils ) {
+    	var mainModule = {
+    		init:function  () {
+    			console.log("Hola Mundo")
+				console.log(_.shuffle([1, 2, 3, 4, 5, 6]))
+				Utils.sayHello("Brunch");
+    		}
+    	}
+        return mainModule
+    }
+);

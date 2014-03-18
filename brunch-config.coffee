@@ -1,8 +1,8 @@
 exports.config =
    # See https://github.com/brunch/brunch/blob/master/docs/config.md.
-  # modules: 
-  #   wrapper: false
-  #   definition: false
+  modules: 
+    wrapper: 'amd'
+    definition: 'amd'
   files:
     javascripts:
       joinTo: 'js/app.js'
